@@ -2,9 +2,14 @@
 
 from flask import Flask
 
-app = Flask(__name__)
+from ext import site
+from ext import config
+from ext import toolbar
 
-@app.route('/')
-def hello_world():
-    return 'Hello New Flask!'
-list
+
+def create_app():
+    app = Flask(__name__)
+    config.init_app(app)
+    toolbar.init_app(app)
+    site.init_app(app)
+    return app
