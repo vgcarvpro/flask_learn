@@ -13,3 +13,5 @@ def create_app():
     toolbar.init_app(app)
     site.init_app(app)
     return app
+# flask no pythonanyware
+my_app = create_app()
