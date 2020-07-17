@@ -2,9 +2,9 @@
 
 from flask import Flask
 
-from vgcarvpro.ext import site
-from vgcarvpro.ext import config
-from vgcarvpro.ext import toolbar
+from ext import site
+from ext import config
+from ext import toolbar
 
 
 def create_app():
