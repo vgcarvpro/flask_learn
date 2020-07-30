@@ -20,3 +20,8 @@ def about():
 @bp.route("/testes")
 def restaurants():
     return render_template("testes.html")
+
+
+@bp.route("/gerador")
+def gerador():
+    return render_template("gerador.html")
