@@ -17,10 +17,6 @@ def about():
     return render_template("about.html")
 
 
-@bp.route("/testes")
-def restaurants():
-    return render_template("testes.html")
-
 
 @bp.route("/gerador")
 def gerador():
